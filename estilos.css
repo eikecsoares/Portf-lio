@@ -1,0 +1,32 @@
+.bg-body-primary{
+    background-color: white;
+}
+
+.bodyindex{
+    background-color: rgb(57, 0, 90);
+
+}
+.profile-img:hover{
+    transform:scale(1.1)
+}
+.profile-img{
+    transition: transform 0.5s;
+    border:  4px solid #ff008c;
+
+
+}
+.botaogit{
+    color: rgb(0, 0, 0);
+    border: #00e1ff;
+    background: #00e1ff;
+    padding: 10px;
+    border-radius: 5px;
+
+
+}
+
+
+    
+
+    
+

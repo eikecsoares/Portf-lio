@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciências: Química, Física e Biologia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+h2{
+    color: rgb(0, 0, 0);
+
+    
+}
+
+p{
+    color: rgb(0, 0, 0);
+
+
+
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(54, 54, 54);
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(206, 206, 206);
+        }
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            background-color: rgb(54, 54, 54);
+            justify-content: center;
+        }
+        .tab {
+            padding: 14px 20px;
+            flex: 1;
+            text-align: center;
+            border-bottom: none;
+            background-color: rgb(100, 100, 100);
+            transition: background-color 0.3s;
+        }
+        .tab:hover {
+            background-color: rgb(0, 125, 209);
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: rgb(196, 196, 196);
+            margin: 0 15px;
+        }
+        .active {
+            display: block;
+        }
+
+        .socio{
+            background-color: wheat;
+
+
+        }
+    </style>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+
+            // Esconde todos os conteúdos das abas
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove a classe "active" de todas as abas
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Mostra o conteúdo da aba ativa e adiciona a classe "active" à aba clicada
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+
+<h1>Linguagens e suas Tecnologias</h1>
+
+<div class="tabs">
+    <div class="tab" onclick="openTab(event, 'portugues')">Português e literatura</div>
+    <div class="tab" onclick="openTab(event, 'ingles')">Inglês</div>
+    <div class="tab" value="socio" onclick="openTab(event, 'edfisica')">Educação Física</div>
+    <div class="tab" onclick="openTab(event, 'artes')">Artes</div>
+</div>
+
+<div id="portugues" class="tab-content active">
+    <h2>1º ano</h2>
+    <p>Eu aprendi sobre o Romantismo e seus principais escritores</p>
+    <button class="youtube-button" onclick="window.location.href='https://youtu.be/2pgwJraQlJc'">Romantismo</button>
+    <br>
+    <br>
+    <h2>2º ano</h2>
+    <p>Um ano totalmente focado em literatura eu a turma leu um livro e fez uns trabalhos sobre ele, o livro era o cão tinhoso</p>
+    <button class="youtube-button" onclick="window.location.href='https://youtu.be/_DsdEeGMyew'">Cão tinhoso</button>
+    <br>
+    <br>
+    <h2>3º ano</h2>
+    <p>Aprendi sobre as escolas literárias em geral no terceiro</p>
+    <button class="youtube-button" onclick="window.location.href='https://youtu.be/4DyqFAIUHg4'">Escolas literárias</button>
+</div>
+
+<div id="ingles" class="tab-content">
+    <h2>1º ano</h2>
+    <p>Aprendi sobre o famoso verbo to be</p>
+    <button class="youtube-button" onclick="window.location.href='https://youtu.be/bSeZlT7Og8I'">Verbo To be</button>
+    <br>
+    <br>
+    <h2>2º ano</h2>
+    <p>No segundo ano a temática foi mais voltada ao black english que é como se fosse "o inglês das ruas"</p>
+    <button class="youtube-button" onclick="window.location.href='https://youtu.be/Js1zrn1hVos'">Black English</button>
+    <br>
+    <br>
+    <h2>3º ano</h2>
+    <p>Aprendi sobre estratégias de provas em inglês ou em outras línguas estrangeiras</p>
+    <button class="youtube-button" onclick="window.location.href='https://youtu.be/15y_-aw0ulc'">Estratégias de prova</button>
+</div>
+
+<div id="edfisica" class="tab-content">
+    <h2>1º ano</h2>
+    <p>Estudei bastante sobre a origem do futebol</p>
+    <button class="youtube-button" onclick="window.location.href='https://youtu.be/DF9Cn0uIWEE'">Origem do futebol</button>
+    <br>
+    <br>
+    <h2>2º ano</h2>
+    <p>No segundo estudei sobre os esportes coletivos como queimada e etc...</p>
+    <button class="youtube-button" onclick="window.location.href='https://youtu.be/osnKkbYNOJY'">Esportes coletivos</button>
+    <br>
+    <br>
+    <h2>3º ano</h2>
+    <p>No terceiro o foco foi mais em esportes de invasão como pique bandeira e baquete</p>
+    <button class="youtube-button" onclick="window.location.href='https://youtu.be/J11nST5GXic'">Esportes de invasão</button>
+</div>
+
+<div id="artes" class="tab-content">
+    <h2>1º ano</h2>
+    <p>No primeiro ano o foco foi mais em arte barroca</p>
+    <button class="youtube-button" onclick="window.location.href='https://youtu.be/5-tQS59DRFg'">Arte barroca</button>
+    <br>
+    <br>
+    <h2>2º ano</h2>
+    <p>No segundo ano do ensino médio o foco da matéria de artes foi mais para teatro e dança</p>
+    <button class="youtube-button" onclick="window.location.href='https://youtu.be/WwtKSpK_Rrk'">A arte do Teatro</button>
+    <br>
+    <br>
+    <h2>3º ano</h2>
+    <p>O foco do terceirão foi surrealismo, teve um trabalho bem interessante que fizemos um desenho livre mas surrealista</p>
+    <button class="youtube-button" onclick="window.location.href='https://youtu.be/fHVuCMhKJ-c'">Surrealismo</button>
+</div>
+<button onclick="voltarPagina()"> <a href="../html/index.html">Voltar</a></button>
+
+
+</body>
+</html>

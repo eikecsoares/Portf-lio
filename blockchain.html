@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciências: Química, Física e Biologia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+h2{
+    color: rgb(0, 0, 0);
+
+    
+}
+
+p{
+    color: rgb(0, 0, 0);
+
+
+
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(54, 54, 54);
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(206, 206, 206);
+        }
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            background-color: rgb(54, 54, 54);
+            justify-content: center;
+        }
+        .tab {
+            padding: 14px 20px;
+            flex: 1;
+            text-align: center;
+            border-bottom: none;
+            background-color: rgb(100, 100, 100);
+            transition: background-color 0.3s;
+        }
+        .tab:hover {
+            background-color: rgb(0, 125, 209);
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: rgb(196, 196, 196);
+            margin: 0 15px;
+        }
+        .active {
+            display: block;
+        }
+
+        .socio{
+            background-color: wheat;
+
+
+        }
+    </style>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+
+            // Esconde todos os conteúdos das abas
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove a classe "active" de todas as abas
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Mostra o conteúdo da aba ativa e adiciona a classe "active" à aba clicada
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+
+<h1>Blockchain</h1>
+
+<div class="tabs">
+    <div class="tab" onclick="openTab(event, 'Blockchain')">Blockchain</div>
+</div>
+
+<div id="Blockchain" class="tab-content active">
+    <h2>Blockchain</h2>
+    <p>Blockchain é uma tecnologia de registro digital descentralizado que armazena informações de forma segura, transparente e imutável. Funciona como um banco de dados distribuído, onde os dados são organizados em blocos interligados por criptografia, formando uma cadeia (chain).
+
+        Cada bloco contém um conjunto de transações e, uma vez registrado, não pode ser alterado sem o consenso da rede. É amplamente usada em criptomoedas, como o Bitcoin, mas também tem aplicações em contratos inteligentes, cadeias de suprimentos, saúde e outras áreas que exigem confiança e rastreabilidade.</p>
+        <button class="youtube-button" onclick="window.location.href='https://youtu.be/NBPOCB05o9Ehttps://youtu.be/7avdgcSATXw'">Blockchain</button>
+
+</div>
+<button onclick="voltarPagina()"> <a href="../html/index.html">Voltar</a></button>
+
+
+</body>
+</html>
